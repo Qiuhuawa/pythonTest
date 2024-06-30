@@ -1,15 +1,26 @@
 from selenium import webdriver
+import time
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+
 
 def main():
-    # 未配置 # chrome_driver 存放位置
-    driver = webdriver.Chrome()  # 调用Chrome()类
+    chrome_option = Options()
+    chrome_option.add_argument('--disable-dev-shm-usage')
 
-    driver.get("https://www.baidu.com")  # 访问百度首页
+    driver = webdriver.Chrome()
+    driver.get("https://www.baidu.com")
 
-    driver.find_element_by_id("kw").send_keys("Selenium")  # 输入"Selenium"
-    driver.find_element_by_id("su").click()  # 提交查询
+    time.sleep(3)
+    driver.find_element(By.XPATH, "//form[@id='form']/span[2]/input").click()
 
-    driver.quit()  # 关闭浏览器
+
+    input()
+
+    #加入断言
+    assert driver.title == "selenium_百度搜索"  #断言页面跳转
+
+    driver.quit()
 
 
 if __name__ == '__main__':
