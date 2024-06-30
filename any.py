@@ -4,7 +4,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.action_chains import ActionChains
 #
 
-driver_path = r"D:\Anaconda3\envs\paddle\Scripts\chromedriver.exe"
 driver = webdriver.Chrome()
 
 driver.get("https://www.taobao.com/")
