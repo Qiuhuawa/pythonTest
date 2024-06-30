@@ -9,10 +9,11 @@ def main():
     chrome_option.add_argument('--disable-dev-shm-usage')
 
     driver = webdriver.Chrome()
-    driver.get("https://www.baidu.com")
+    driver.get("https://www.ptpress.com.cn/")
 
-    time.sleep(3)
-    driver.find_element(By.XPATH, "//form[@id='form']/span[2]/input").click()
+    driver.find_element(By.CSS_SELECTOR, "div > input").send_keys("1")
+    driver.find_element(By.CSS_SELECTOR, "#header > div.container.clearfix > div > div.search > img").click()
+
 
 
     input()
