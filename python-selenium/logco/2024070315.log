@@ -1,0 +1,9 @@
+2024-07-03 15:22:55,728 - 2021250360043 - INFO - input data:name:admin,pwd:30473860,assert:登录成功
+2024-07-03 15:23:01,205 - 2021250360043 - INFO - input data:name:admin,pwd:111,assert:账号或密码不正确！
+2024-07-03 15:23:06,462 - 2021250360043 - INFO - input data:name:,pwd:liwanlei,assert:账号不能为空！
+2024-07-03 15:23:11,631 - 2021250360043 - INFO - input data:name:admin,pwd:,assert:密码不能为空！
+2024-07-03 15:23:19,662 - 2021250360043 - INFO - insert data: account:cheng1, name:chengchao, id:001, email:1010565096@qq.com, telephone:12312341234, gender:1,suc:1,  assert:用户添加成功
+2024-07-03 15:23:55,720 - 2021250360043 - INFO - insert data: account:, name:chengchao1, id:001, email:1010565096@qq.com, telephone:12312341234, gender:1,suc:2,  assert:请输入用户名
+2024-07-03 15:24:32,007 - 2021250360043 - INFO - insert data: account:cheng2, name:chengchao2, id:001, email:1010565096@qq.com, telephone:12312341234, gender:9,suc:3,  assert:请选择性别
+2024-07-03 15:25:09,919 - 2021250360043 - INFO - insert data: account:cheng2, name:chengchao2, id:001, email:10105, telephone:12312341234, gender:1,suc:4,  assert:邮箱格式不正确
+2024-07-03 15:25:46,167 - 2021250360043 - INFO - insert data: account:cheng2, name:chengchao2, id:001, email:1010565096@qq.com, telephone:123, gender:1,suc:5,  assert:邮箱格式不正确
