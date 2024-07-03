@@ -24,8 +24,8 @@ def main():
             driver.switch_to.window(h)
 
     time.sleep(2)
-    driver.find_element(By.ID, "TANGRAM__PSP_4__userName").send_keys("ChengChaoHeart")
-    driver.find_element(By.ID, "TANGRAM__PSP_4__phone").send_keys("13574818307")
+    driver.find_element(By.ID, "TANGRAM__PSP_4__userName").send_keys("Chexxxxx")
+    driver.find_element(By.ID, "TANGRAM__PSP_4__phone").send_keys("xxxxxx")
     driver.find_element(By.ID,"TANGRAM__PSP_4__password").send_keys("C11111111")
     # driver.find_element(By.ID,"TANGRAM__PSP_4__verifyCodeSend").click()
     time.sleep(3)
