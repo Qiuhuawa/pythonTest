@@ -8,18 +8,18 @@ def main():
     #chrome_option.add_argument('--disable-dev-shm-usage')
     chrome_option.add_experimental_option("excludeSwitches", ['enable-automation'])
     driver = webdriver.Chrome(options=chrome_option)
-    driver.get("https://www.acwing.com")
+    driver.get("https://www.xxx")
 
     time.sleep(5)
-    driver.find_element(By.XPATH, "/html/body/div[2]/nav/div/div[2]/ul[2]/li[3]/a").click()
+    driver.find_element(By.XPATH, "xxxxxxxxx").click() #点击登录
     time.sleep(10)
 
-    driver.find_element(By.ID, "login_username").send_keys("1010565096@qq.com")
-    driver.find_element(By.ID, "login_password").send_keys("Cheng031120")
+    driver.find_element(By.ID, "login_username").send_keys("xxxxx@xxx.com")
+    driver.find_element(By.ID, "login_password").send_keys("xxxxxxxx")
     driver.find_element(By.ID, "login_remember_me").click()
     time.sleep(2)
 
-    driver.find_element(By.XPATH,"/html/body/div[3]/div/div/div[2]/form[1]/div[2]/div[1]/button").click()
+    driver.find_element(By.XPATH,"xxxxxx").click() #登录确认按钮
 
     input()
 
